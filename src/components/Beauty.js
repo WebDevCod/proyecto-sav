@@ -1,9 +1,10 @@
 import Carousel from 'react-bootstrap/Carousel';
+import Layout from '../layout/Layout';
 
-function Beauty() {
+export default function Beauty() {
     return (
         <>
-            <div>
+            <Layout>
                 <Carousel controls={false} indicators={false}>
                     <Carousel.Item>
                         <img className="d-block w-100" src={require('../img/beauty/01.jpg')} alt="retrato" />
@@ -18,9 +19,7 @@ function Beauty() {
                         <img className="d-block w-100" src={require('../img/beauty/04.jpg')} alt="retrato" />
                     </Carousel.Item>
                 </Carousel>
-            </div>
+            </Layout>
         </>
-    )
-}
-
-export default Beauty;
+    );
+};

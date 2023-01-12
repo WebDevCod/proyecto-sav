@@ -1,8 +1,8 @@
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { Outlet, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-function NavBarUsed() {
+export default function NavBarUsed() {
     return (
         <>
             <Navbar expand="lg" className="ms-2 p-0" >
@@ -15,12 +15,7 @@ function NavBarUsed() {
                         <Nav.Link as={Link} to="/about">About</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
-            </Navbar>
-            <section>
-                <Outlet></Outlet>
-            </section>
+            </Navbar>          
         </>
-    )
-}
-
-export default NavBarUsed;
+    );
+};

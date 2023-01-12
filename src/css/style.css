@@ -1,8 +1,17 @@
 p {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Nunito', sans-serif;
 }
 
 Nav {
-    font-family: 'Anton', sans-serif;
-    font-size: large;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    color: black;
+    text-align: center;
 }

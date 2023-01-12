@@ -1,9 +1,9 @@
-function Home() {
-    return (
-        <div>
-            <h1>Home</h1>
-        </div>
-    )
-}
+import Layout from '../layout/Layout';
 
-export default Home;
+export default function Home() {
+    return (
+        <Layout>
+            <img className='w-100 pt-3' src={require('../img/retratos/04.jpg')} alt="retrato" />
+        </Layout>
+    );
+};
