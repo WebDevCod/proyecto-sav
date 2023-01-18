@@ -1,5 +1,6 @@
 p {
     font-family: 'Nunito', sans-serif;
+    font-size: 20px;
 }
 
 .navbar-brand {
@@ -14,31 +15,22 @@ p {
     text-align: center;
 }
 
-.container-img {
-    display: flex;
-    justify-content: center;
-}
-
-.img-about {
-    max-width: 100%;
-    margin-bottom: 20px;
-}
-
 #root {
     min-height: 100vh;
     position: relative;
 }
 
-footer {
+footer p {
     width: 100%;
     position: absolute;
     bottom: 0;
     background-color: white;
     text-align: center;
+    margin: 0;
 }
 
 @media (max-width: 576px) {
     .navbar-brand {
-        font-size: 30px;
+        font-size: 35px;
     }
 }

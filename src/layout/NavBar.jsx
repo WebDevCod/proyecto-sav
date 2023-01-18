@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default function NavBar() {
     return (
         <Navbar expand="lg">
-            <Navbar.Brand as={Link} to="/" className='navbar-brand'>Santiago Aquino</Navbar.Brand>
+            <Navbar.Brand className='navbar-brand'>Santiago Aquino</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" style={{ border: 'none' }} />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className='nav-link'>

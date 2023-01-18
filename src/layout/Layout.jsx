@@ -9,7 +9,7 @@ export default function Layout({ children }) {
                 {children}
             </main>
             <footer>
-                <p className='m-0'>Copyright {new Date().getFullYear()}</p>
+                <p>Copyright {new Date().getFullYear()}</p>
             </footer>
         </>
     );
