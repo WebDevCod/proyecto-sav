@@ -36,12 +36,8 @@ export default function Beauty() {
   return (
     <>
       <Layout>
-        <div className={model ? 'model open' : 'model'}>
-          <img src={tempimgSrc} alt='' />
-          <i
-            className='bi bi-x-circle close'
-            onClick={() => setModel(false)}
-          ></i>
+        <div onClick={() => setModel(false)} className={model ? 'model open' : 'model'}>
+          <img src={tempimgSrc} alt='' />         
         </div>
 
         <div className='gallery'>

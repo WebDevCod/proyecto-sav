@@ -10,7 +10,7 @@ export default function About() {
           <img
             src={require('../img/img_about.jpg')}
             className='img-fluid'
-            alt='retrato de Santiago Aquino'
+            alt='Retrato de Santiago Aquino'
           />
         </div>
         <div className='row justify-content-center'>

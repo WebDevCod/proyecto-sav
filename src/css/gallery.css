@@ -54,15 +54,3 @@
   padding: 20px 0 20px;
   margin: 0 auto;
 }
-
-.model.open i.close {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  width: 2rem;
-  height: 2rem;
-  padding: 5px;
-  background-color: rgba(0, 0, 0, 0);
-  color: white;
-  cursor: pointer;
-}
