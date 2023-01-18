@@ -1,6 +1,6 @@
 import Layout from '../layout/Layout';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram, faTumblr } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 export default function About() {
   return (
@@ -22,12 +22,13 @@ export default function About() {
             retratos.
           </p>
         </div>
+        <div className='contact text-center pb-3'>
+          <h6>CONTACTO</h6>
+          <a href='mailto:savfotografia@gmail.com'>savfotografia@gmail.com</a>
+        </div>
         <div className='social-media-icons pb-5 d-flex justify-content-center'>
-          <a href='https://instagram.com' target='_blank' rel='noreferrer' className='pe-5'>
+          <a href='https://www.instagram.com/santiagoaquinofoto' target='_blank' rel='noreferrer'>
             <FontAwesomeIcon icon={faInstagram} />
-          </a>
-          <a href='https://tumblr.com' target='_blank' rel='noreferrer'>
-            <FontAwesomeIcon icon={faTumblr} />
           </a>
         </div>
       </div>

@@ -7,50 +7,61 @@ import '../css/gallery.css';
 import { useState } from 'react';
 
 export default function Beauty() {
-    let data = [
-        {
-            id: 1,
-            imgSrc: Img1,
-        },
-        {
-            id: 2,
-            imgSrc: Img2,
-        },
-        {
-            id: 3,
-            imgSrc: Img3,
-        },
-        {
-            id: 4,
-            imgSrc: Img4,
-        },
-    ]
+  let data = [
+    {
+      id: 1,
+      imgSrc: Img1,
+    },
+    {
+      id: 2,
+      imgSrc: Img2,
+    },
+    {
+      id: 3,
+      imgSrc: Img3,
+    },
+    {
+      id: 4,
+      imgSrc: Img4,
+    },
+  ];
 
-    const [model, setModel] = useState(false);
-    const [tempimgSrc, setTempImgSrc] = useState('');
+  const [model, setModel] = useState(false);
+  const [tempimgSrc, setTempImgSrc] = useState('');
 
-    const getImg = (imgSrc) => {
-        setTempImgSrc(imgSrc);
-        setModel(true);
-    }
-    return (
-        <>
-            <Layout>
-                <div className={model ? 'model open' : 'model'}>
-                    <img src={tempimgSrc} alt='' />
-                    <i className="bi bi-x-circle close" onClick={() => setModel(false)}></i>
-                </div>
+  const getImg = (imgSrc) => {
+    setTempImgSrc(imgSrc);
+    setModel(true);
+  };
+  return (
+    <>
+      <Layout>
+        <div className={model ? 'model open' : 'model'}>
+          <img src={tempimgSrc} alt='' />
+          <i
+            className='bi bi-x-circle close'
+            onClick={() => setModel(false)}
+          ></i>
+        </div>
 
-                <div className='gallery'>
-                    {data.map((item, index) => {
-                        return (
-                            <div className='pics' key={index} onClick={() => getImg(item.imgSrc)}>
-                                <img src={item.imgSrc} style={{ width: '100%' }} alt={item.img} />
-                            </div>
-                        )
-                    })}
-                </div>
-            </Layout>
-        </>
-    );
-};
+        <div className='gallery'>
+          {data.map((item, index) => {
+            return (
+              <div
+                className='pics'
+                key={index}
+                onClick={() => getImg(item.imgSrc)}
+              >
+                <img
+                  src={item.imgSrc}
+                  style={{ width: '100%' }}
+                  alt={item.id}
+                />
+              </div>
+            );
+          })}
+        </div>
+      </Layout>
+    </>
+  );
+}

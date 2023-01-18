@@ -1,49 +1,54 @@
 p {
-    font-family: 'Nunito', sans-serif;
-    font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
 }
 
 .navbar-brand {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 60px;
-    padding-left: 20px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 60px;
+  padding-left: 20px;
 }
 
 .nav-link {
-    font-family: 'Nunito', sans-serif;
-    font-size: 20px;
-    text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  text-align: center;
 }
 
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
-    outline: none;
-    box-shadow: none;
+  outline: none;
+  box-shadow: none;
 }
 
 #root {
-    min-height: 100vh;
-    position: relative;
+  min-height: 100vh;
+  position: relative;
 }
 
 footer p {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    background-color: white;
-    text-align: center;
-    margin: 0;
-    font-size: 15px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  text-align: center;
+  margin: 0;
+  font-size: 15px;
 }
 
 .social-media-icons a {
-    color: black;
-    font-size: 2rem;
+  color: black;
+  font-size: 2rem;
+}
+
+.contact a {
+  text-decoration: none;
+  color: black;
 }
 
 @media (max-width: 576px) {
-    .navbar-brand {
-        font-size: 35px;
-    }
+  .navbar-brand {
+    font-size: 35px;
+  }
 }
