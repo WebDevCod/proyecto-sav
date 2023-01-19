@@ -1,5 +1,7 @@
-import React from "react";
-import NavBar from "./NavBar";
+import React from 'react';
+import NavBar from './NavBar';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faCopyright} from '@fortawesome/free-regular-svg-icons';
 
 export default function Layout({ children }) {
   return (
@@ -7,7 +9,7 @@ export default function Layout({ children }) {
       <NavBar />
       <main>{children}</main>
       <footer>
-        <p>Copyright {new Date().getFullYear()}</p>
+        <p>Copyright <FontAwesomeIcon icon={faCopyright} className='copyrightIcon'/> {new Date().getFullYear()}</p>
       </footer>
     </>
   );
