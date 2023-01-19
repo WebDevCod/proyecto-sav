@@ -6,7 +6,7 @@ export default function NavBar() {
   return (
     <Navbar expand='lg'>
       <Navbar.Brand className='navbar-brand' href='/'>
-        Santiago Aquino
+        santiago aquino
       </Navbar.Brand>
       <Navbar.Toggle
         aria-controls='basic-navbar-nav'
