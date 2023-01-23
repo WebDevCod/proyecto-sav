@@ -5,7 +5,7 @@ export default function Home() {
     <Layout>
       <img
         src={require('../img/bg-home.jpg')}
-        className='w-100 bg-home'
+        className='img-fluid'
         alt='Collage'
       />
     </Layout>
