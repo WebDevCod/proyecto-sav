@@ -8,7 +8,7 @@ export default function Layout({ children }) {
     <>
       <NavBar />
       <main>{children}</main>
-      <footer>
+      <footer className='footer'>
         <p>Copyright <FontAwesomeIcon icon={faCopyright} className='copyrightIcon'/> {new Date().getFullYear()}</p>
       </footer>
     </>

@@ -3,6 +3,8 @@ import Img1 from '../img/beauty/01.jpg';
 import Img2 from '../img/beauty/02.jpg';
 import Img3 from '../img/beauty/03.jpg';
 import Img4 from '../img/beauty/04.jpg';
+import Img5 from '../img/beauty/05.jpg';
+import Img6 from '../img/beauty/06.jpg';
 import '../css/gallery.css';
 import { useState } from 'react';
 
@@ -23,6 +25,14 @@ export default function Beauty() {
     {
       id: 4,
       imgSrc: Img4,
+    },
+    {
+      id: 5,
+      imgSrc: Img5,
+    },
+    {
+      id: 6,
+      imgSrc: Img6,
     },
   ];
 

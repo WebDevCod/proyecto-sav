@@ -1,18 +1,28 @@
+html {
+  font-size: 12px;
+}
+
 p {
   font-family: "Nunito", sans-serif;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 .navbar-brand {
   font-family: "Quicksand", sans-serif;
-  font-size: 60px;
-  padding: 0 0 0 20px;
-  margin: 0;
+  font-size: 5rem;
+  font-weight: 500;
+  padding: 0 0 0 2rem;
+}
+
+.brandIcon {
+  vertical-align: middle;
+  font-size: 1rem;
+  color: rgba(237, 183, 68, 255)
 }
 
 .nav-link {
   font-family: "Nunito", sans-serif;
-  font-size: 20px;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -35,26 +45,161 @@ footer p {
   background-color: white;
   text-align: end;
   margin: 0;
-  font-size: 15px;
+  font-size: 1.2rem;
   padding-right: 15px;
 }
 
 .social-media-icons a {
   color: black;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .copyrightIcon {
-  font-size: 12px;
+  font-size: 1rem;
+}
+
+.contact {
+  padding-top: 10rem;
 }
 
 .contact a {
   text-decoration: none;
   color: black;
+  font-size: 1.5rem;
 }
 
-@media (max-width: 576px) {
+.contact h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+}
+
+.container-about {
+  padding-top: 5rem;
+}
+
+.footer p {
+  z-index: 1;
+}
+
+@media (min-width:1441px) {
   .navbar-brand {
-    font-size: 35px;
+    font-size: 5rem;
+  }
+
+  .carousel-item img {
+    width: 35%;
+  }
+}
+
+@media (max-width:1440px) {
+  .navbar-brand {
+    font-size: 5rem;
+  }
+
+  .carousel-item img {
+    width: 30%;
+  }
+}
+
+@media (max-width:1200px) {
+  .navbar-brand {
+    font-size: 5rem;
+    padding-bottom: 1rem;
+  }
+
+  .gallery {
+    padding-top: 1rem;
+  }
+
+  .carousel-item img {
+    width: 35%;
+  }
+}
+
+@media (max-width:992px) {
+  .navbar-brand {
+    font-size: 4.8rem;
+  }
+
+  .text-about {
+    padding-left: 2rem;
+  }
+
+  .gallery {
+    padding-top: 1rem;
+  }
+
+  .carousel-item img {
+    width: 50%;
+  }
+}
+
+@media (max-width:768px) {
+  .navbar-brand {
+    font-size: 4.5rem;
+  }
+
+  .gallery {
+    padding-top: 1rem;
+  }
+
+  .container-about {
+    padding-top: 1rem;
+  }
+
+  .carousel-item img {
+    width: 65%;
+  }
+}
+
+@media (max-width:480px) {
+  .navbar-brand {
+    font-size: 3rem;
+    padding-bottom: 0;
+  }
+
+  .gallery {
+    padding-top: 1rem;
+  }
+
+  .container-about {
+    padding-top: 1rem;
+  }
+
+  .brandIcon {
+    font-size: 0.6rem;
+  }
+
+  .carousel-item img {
+    width: 100%;
+  }
+}
+
+@media (max-width:320px) {
+  .navbar-brand {
+    font-size: 2.5rem;
+    padding-left: 1rem;
+    padding-bottom: 0;
+  }
+
+  .nav-link {
+    font-size: 1.6rem;
+  }
+
+  .text-about p {
+    font-size: 1.5rem;
+  }
+
+  .container-about {
+    padding-top: 1rem;
+  }
+
+  .brandIcon {
+    font-size: 0.6rem;
+  }
+
+  .carousel-item img {
+    width: 100%;
   }
 }

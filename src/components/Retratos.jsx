@@ -3,6 +3,8 @@ import Img1 from '../img/retratos/01.jpg';
 import Img2 from '../img/retratos/02.jpg';
 import Img3 from '../img/retratos/03.jpg';
 import Img4 from '../img/retratos/04.jpg';
+import Img5 from '../img/retratos/05.jpg';
+import Img6 from '../img/retratos/06.jpg';
 import '../css/gallery.css';
 import { useState } from 'react';
 
@@ -23,6 +25,14 @@ export default function Retratos() {
     {
       id: 4,
       imgSrc: Img4,
+    },
+    {
+      id: 5,
+      imgSrc: Img5,
+    },
+    {
+      id: 6,
+      imgSrc: Img6,
     },
   ];
 
